@@ -75,12 +75,22 @@ body::after {
   right: 0;
   position: absolute;
   z-index: -1;
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* NAVBAR */
+
+
+
+/* NAVBAR #2970ff;*/
 
 .navbar {
-  background-color: #2970ff;
+  background-color: rgba(20, 70, 140,1);
   color: #091440;
   font-size: 1.2rem;
   border-bottom: 5px;
@@ -134,7 +144,7 @@ body::after {
   margin-top: 30px;
   border-style: solid;
   border-width: 10px;
-  border-color: #2970ff;
+  border-color: #091440;
 }
 
 #comics {
@@ -146,7 +156,8 @@ body::after {
 .featured-comic img {
   border-style: solid;
   border-width: 10px;
-  border-color: white;
+  border-color: #091440;
+  border-bottom: 0px;
 }
 
 main {
@@ -174,4 +185,7 @@ main {
 
 .content img {
   max-width: 100%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #091440;
 }

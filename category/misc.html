@@ -8,59 +8,112 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <link rel="stylesheet" href="/theme/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/theme/images/favicon.png"/>
+
     <title>DCR Comic</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#"><img src="/theme/images/favicon.png" alt="DCR Comic" width="30" height="30"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Comics</a>
-          <a class="nav-item nav-link" href="#">Decred</a>
-          <a class="nav-item nav-link" href="#">Github</a>
-          <a class="nav-item nav-link" href="#">Twitter</a>
-        </div>
-      </div>
-    </nav>
-    <main>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+  <div class="container">
+  <a class="navbar-brand" href="/"><img src="/theme/images/ideaStakey.png" alt="DCR Comic" width="50" height="40"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <p>MORE</p>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+
+
+
+
+
+
+          <a class="nav-item nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#comics">Comics</a>
+          <a class="nav-item nav-link" href="https://decred.org">Decred</a>
+          <a class="nav-item nav-link" href="https://github.com/plabarta/dcrwebcomic">Github</a>
+          <a class="nav-item nav-link" href="https://twitter.com/dcrcomic">Twitter</a>
+
+
+
+
+
+    </div>
+  </div>
+  </div>
+</nav>    <main>
 <div class="container dcrc-header">
   <div class="row">
     <div class="col">
-      <h1>DCR Comic</h1>
-      <p> <strong>DCR Comic</strong> is a visual guide to <a href="https://decred.org">Decred</a>.</p><p> If you want to collaborate or reuse its content, visit the <a href="https://github.com/plabarta/dcrwebcomic">Github repo</a>.</p>
+      <img src="https://raw.githubusercontent.com/pLabarta/dcrwebcomic/master/Assets/characters/comic1/oldStakey.png" alt="old-stakey" width='200' height="160">
+      <h1 style='text-align:center; font-weight: 800;'>DCR Comic</h1>
+      <p> A visual guide to <a href="https://decred.org">Decred</a>.</p>
+      <p> If you want to collaborate or reuse its content, visit the <a href="https://github.com/plabarta/dcrwebcomic">Github repo</a>.</p>
     </div>
   </div>
-</div><div class="container">
-  <div class="row">
-    <div class="col">
-      This is an ad.
-    </div>
-    <div class="col">
-      This is an ad.
-    </div>
-    <div class="col">
-      This is an ad.
-    </div>
+</div><div class="container featured-comic">
+<a href="01-the-way-of-the-decred-contractor.html" target="_self">
+  <img style='max-width: 100%;' src="https://raw.githubusercontent.com/pLabarta/dcrwebcomic/master/01%20-%20The%20way%20of%20the%20Contractor/Images/en/comic1.png" alt="proof-of-stakey-comic">
+</a>
+</div><div class="container" id="comics">
+  <h1 style='text-align:center; font-weight: 800;'>All the comics</h1>
+<dl class="row">
+  <div class="col-md-4 col-sm-6 col-lg-3 comic-img">
+    <a href="01-the-way-of-the-decred-contractor.html"><img style='max-width: 100%'src="https://raw.githubusercontent.com/pLabarta/dcrwebcomic/master/Social%20Media/covers/squares/comic1_1080x1080.png" alt="cover_image"></a>
   </div>
+</dl>
+</div>
+    </main>
+
+<!-- Footer -->
+<div class="dcr-footer">
+<footer class="page-footer font-small teal pt-4">
+
+  <!-- Footer Text -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">DCR Comic</h5>
+        <p>DCR Comic is a visual guide to Decred funded and developed by the Decred DAO and it's community. Feel free to reuse anything. If you wish to collaborate with DCR Comic, visit our <a href="https://github.com/plabarta/dcrwebcomic">Github repo</a>.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">Decred</h5>
+        <p>Decred is a community-directed cryptocurrency with built-in governance to make it a superior long-term store of value.</p>
+        <p>Learn more about Decred visiting the <a href="https://decred.org">oficial site</a> or read <a href="https://docs.decred.org">the docs</a>.</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">Follow us on Twitter:
+    <a href="https://twitter.com/dcrcomic"> @dcrcomic</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </div>
 
-<h2>main stuff</h2>
-<dl class="row">
-  <div class="col-md-4 comic-img">
-    <a href="test.html"><img style='max-width: 100%'src="2" alt="cover_image"></a>
-  </div>
-</dl>
-
-    </main>
-
-  <div class="footer fixed-bottom">
-    FOOTER
-  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
