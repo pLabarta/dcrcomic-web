@@ -59,153 +59,119 @@ pre, code {
     font-family: "dcrweb-code", "Courier New", "monospace" !important;
 }
 
-/* END FONTS */
-
-::selection {
-  background: #0085a1;
-  color: #fff;
-  text-shadow: none;
-}
 
 body {
+  background-color: black;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background-image: url(https://user-images.githubusercontent.com/15022929/52274256-69281a80-294c-11e9-84ee-5ba31d8a1078.png);
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: #2970ff;
+  color: #091440;
+  font-size: 1.2rem;
+  border-bottom: 5px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #1860ee;
+}
+
+.navbar a {
+  color: #091440;
+}
+
+.navbar button {
+  color: white;
+}
+
+.navbar-toggler p {
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-nav a {
+  text-align: center;
+}
+
+
+
+.navbar-toggler {
+  border: none;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* DCRC-HEADER */
+
+.dcrc-header {
+  text-align: center;
+  margin-top:30px;
+  color: white;
+}
+
+/* COMIC IMG (SQUARES/COVERS) */
+
+.comic-img img {
+  margin-top: 30px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #2970ff;
+}
+
+#comics {
+  margin-top: 30px;
+}
+
+/* FEATURED COMIC */
+
+.featured-comic img {
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+}
+
+main {
+  padding-bottom: 40px;
+  color: white;
+}
+
+.dcr-footer {
   background-color: #091440;
+  color: white;
 }
 
-a {
-  color: #2ED6A1;
+.footer-copyright {
+  background-color: #2970ff;
 }
 
-a:focus,
-a:hover {
-  color: #2ED6A1;
+.footer-copyright a{
+  color: white;
 }
 
-blockquote {
-  color: #818a91;
-  font-style: italic;
+/* CONTENT ARTICLE */
+.content {
+  margin-top: 30px;
 }
 
-hr {
-  margin: 1.5rem 0;
-}
-
-/* ------------------------------------------------------------------------- */
-
-.container {
-  max-width: 960px;
-}
-
-.header,
-.footer {
-  color: #fff;
-  padding: 1.5rem 0 .5rem;
-}
-
-.header {
-  border-bottom: 1px solid rgba(0,0,0,.1);
-}
-
-.header a {
-  color: #fff;
-}
-
-.header img {
-  margin-bottom: 1rem;
-}
-
-.header .title {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.header ul,
-.header li {
-  margin-bottom: .5rem;
-}
-
-.header ul {
-  font-size: 1.25rem;
-  font-weight: 300;
-  text-transform: lowercase;
-}
-
-.main {
-  background-color: #fff;
-  padding: 1.5rem 0;
-}
-
-.footer {
-  border-top: 1px solid rgba(0,0,0,.1);
-}
-
-.footer a {
-  color: #fff;
-}
-
-.highlight pre {
-  border: 1px solid rgba(0,0,0,.1);
-  padding: 1rem;
-}
-
-.pagination .page-link {
-  color: #333;
-}
-
-.teaser header ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.teaser header li {
-  margin-bottom: .5rem;
-}
-
-.teaser .content p {
-  margin-bottom: 0;
-}
-
-.article header ul,
-.article header li {
-  margin-bottom: .5rem;
-}
-
-.article header li:not(:last-child) {
-  margin-right: 10px;
-}
-
-.article .content a {
-  text-decoration: underline
-}
-
-@media (min-width: 576px) {
-  .header .title {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .header,
-  .footer {
-    text-align: center;
-  }
-
-  .teaser header li {
-    display: inline-block;
-  }
-
-  .teaser header li:not(:last-child) {
-    margin-right: 10px;
-  }
-}
-
-/* ------------------------------------------------------------------------- */
-
-.comic-img {
-  padding-top: 30px;
-}
-
-.article img {
+.content img {
   max-width: 100%;
 }
-
-/* Decred fonts */
