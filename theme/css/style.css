@@ -90,9 +90,10 @@ body::after {
 /* NAVBAR #2970ff;*/
 
 .navbar {
-  background-color: rgba(20, 70, 140,1);
+  background-color: #2970ff;
   color: #091440;
   font-size: 1.2rem;
+  font-color: white;
   border-bottom: 5px;
   border-top: 0px;
   border-left: 0px;
@@ -102,7 +103,7 @@ body::after {
 }
 
 .navbar a {
-  color: #091440;
+  color: white;
 }
 
 .navbar button {
@@ -115,11 +116,6 @@ body::after {
   margin-bottom: auto;
 }
 
-.navbar-nav a {
-  text-align: center;
-}
-
-
 
 .navbar-toggler {
   border: none;
@@ -129,6 +125,11 @@ body::after {
 .navbar-toggler-icon {
   color: white;
 }
+
+.navbar {
+  text-align: center;
+}
+
 
 /* DCRC-HEADER */
 
@@ -140,26 +141,38 @@ body::after {
   border-bottom: 10px;
   border-style: solid;
   border-color: #091440;
-  margin: 0;
-    width: 100%;
-    font-family: "Exo", sans-serif;
-    color: #fff;
-    background: linear-gradient(-45deg,#2ED6A1, #2970ff,#091440);
-    background-size: 400% 400%;
-    animation: gradientBG 5s ease infinite;
+
+    background: linear-gradient(-45deg,#091440, #2970ff,#2ED6A1);
+    background-size: 200% 200%;
+    animation: gradientBG 10s ease infinite;
 }
 
 @keyframes gradientBG {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 70%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 100%;
     }
 }
+
+.sliding-background {
+  background: url("https://user-images.githubusercontent.com/15022929/52274256-69281a80-294c-11e9-84ee-5ba31d8a1078.png") repeat-x;
+  height: 560px;
+  width: 5076px;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes .slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
 }
 
 #jumbo {
@@ -187,6 +200,12 @@ body::after {
   border-style: solid;
   border-width: 10px;
   border-color: #091440;
+  transition: 0.2s;
+}
+
+.comic-img img:hover {
+  box-shadow: 10px -10px #2970ff;
+  transform: translate(-10px,10px);
 }
 
 #comics {
@@ -219,6 +238,12 @@ main {
 
 .footer-copyright a{
   color: white;
+}
+
+.with-tickets {
+  text-shadow: 0px 2px 4px #ccc, 1px 1px 0 #ccc, 0px 2px 0 #ccc;
+  font-size: 3rem;
+  text-align: center;
 }
 
 /* CONTENT ARTICLE */
