@@ -132,10 +132,52 @@ body::after {
 
 /* DCRC-HEADER */
 
-.dcrc-header {
+.dcr-header {
   text-align: center;
-  margin-top:30px;
+  margin-top: 0px;
   color: white;
+  margin-bottom: 30px;
+  border-bottom: 10px;
+  border-style: solid;
+  border-color: #091440;
+  margin: 0;
+    width: 100%;
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg,#2ED6A1, #2970ff,#091440);
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+}
+
+#jumbo {
+  background-color: rgba(20, 70, 140,0.5);
+  background-image: url(/theme/images/happyStakeys.png);
+  background-repeat: no-repeat;
+  background-center: center;
+  background-size: 100%;
+  height: auto;
+}
+
+.dcrc-header .card {
+  background-color: rgba(20, 70, 140,1);
+}
+
+.dcr-header .card img {
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 
 /* COMIC IMG (SQUARES/COVERS) */
@@ -158,6 +200,7 @@ body::after {
   border-width: 10px;
   border-color: #091440;
   border-bottom: 0px;
+  margin-top: 30px;
 }
 
 main {
@@ -183,9 +226,10 @@ main {
   margin-top: 30px;
 }
 
-.content img {
+.content p img {
   max-width: 100%;
   border-style: solid;
   border-width: 10px;
   border-color: #091440;
+  border-bottom: 0px;
 }
